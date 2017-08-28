@@ -63,6 +63,7 @@ public class NewsTabLayout extends Fragment {
     }
 
     private void initData() {
+
     }
 
 }
