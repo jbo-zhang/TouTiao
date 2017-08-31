@@ -21,7 +21,8 @@
             android:layout_weight="1"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/AppTheme.AppBarOverlay"
-            app:tabTextColor="@color/gray"></android.support.design.widget.TabLayout>
+            app:tabTextColor="@color/gray">
+        </android.support.design.widget.TabLayout>
 
         <ImageView
             android:id="@+id/add_channel_iv"

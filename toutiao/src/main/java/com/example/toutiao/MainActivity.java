@@ -53,7 +53,6 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     private void initView() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        L.d(thiz, "toolbar: " + toolbar);
         bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         BottomNavigationViewHelper.disableShiftMode(bottom_navigation);
         setSupportActionBar(toolbar);

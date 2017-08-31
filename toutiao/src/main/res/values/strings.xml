@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">头条</string>
 
-    <!-- Example General com.meiji.toutiao.settings -->
+    <!-- Example General com.meiji.com.example.toutiao.settings -->
     <string name="switch_photo_mode">无图模式</string>
     <string name="basic_setting">基本设置</string>
     <string name="switch_no_photo_mode_summary">开启后在非Wifi环境下不加载图片</string>

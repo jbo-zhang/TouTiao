@@ -7,6 +7,8 @@ import android.preference.PreferenceManager;
 import com.example.toutiao.InitApp;
 import com.example.toutiao.R;
 
+import static android.R.attr.textSize;
+
 /**
  * Created by zhangjinbo on 17-8-25.
  */
@@ -31,6 +33,46 @@ public class SettingUtil {
         }
 
         return color;
+    }
+
+    /**
+     * 获取图标值
+     * @return
+     */
+    public int getCustomIconValue() {
+        String s = setting.getString("custom_icon", "0");
+        return Integer.parseInt(s);
+    }
+
+    /**
+     * 获取滑动返回值
+     * @return
+     */
+    public int getSlidable() {
+        String s = setting.getString("slidable", "1");
+        return Integer.parseInt(s);
+    }
+
+    /**
+     * 获取是否开启导航栏上色
+     * @return
+     */
+    public boolean getNavBar() {
+        return setting.getBoolean("nav_bar", false);
+    }
+
+    /**
+     * 获取是否开启无图模式
+     */
+    public boolean getIsNoPhotoMode() {
+        return setting.getBoolean("switch_noPhotoMode", false) && NetWorkUtil.isMobileConnected(InitApp.AppContext);
+    }
+
+    /**
+     * 获取字体大小
+     */
+    public int getTextSize() {
+        return setting.getInt("textsize", 16);
     }
 
 
